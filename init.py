@@ -9,6 +9,10 @@ import os
 from functions import NetEaseMusicAssistant, Util
 from MusicBoxApi import api as NetEaseApi
 
+phone_number = ""
+password = ""
+playlist_id = ""
+
 
 def init():
 	# -------------------
@@ -26,10 +30,10 @@ def init():
 	# ------开始获取播放列表------
 	# --------------------------
 	# 登录
-	netease.phone_login("", "")
+	netease.phone_login(phone_number, password)
 
 	# 获取音乐播放列表
-	data = netease.playlist_detail("")
+	data = netease.playlist_detail(playlist_id)
 
 	# 读取本地音乐库最新音乐ID
 	with open("local.dat", "r") as file:
