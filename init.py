@@ -21,6 +21,9 @@ email_password = md5(b'Your Password').hexdigest()
 # 需要同步的播放列表ID
 playlist_id = ""
 
+# 头文件Cookie（包含_ntes_nnid与_ntes_nuid）
+header_cookie = "_ntes_nnid=; _ntes_nuid=;"
+
 
 def init():
 	# -------------------
