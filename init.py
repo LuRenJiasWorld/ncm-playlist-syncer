@@ -9,8 +9,10 @@ import os
 from functions import NetEaseMusicAssistant, Util
 from MusicBoxApi import api as NetEaseApi
 
+# 手机登录
 phone_number = ""
-password = ""
+password = md5(b'Your Password').hexdigest()
+
 # 网易邮箱绑定登录
 email = ""
 email_password = md5(b'Your Password').hexdigest()
