@@ -11,6 +11,9 @@ from MusicBoxApi import api as NetEaseApi
 
 phone_number = ""
 password = ""
+# 网易邮箱绑定登录
+email = ""
+email_password = md5(b'Your Password').hexdigest()
 playlist_id = ""
 
 
