@@ -89,7 +89,7 @@ def init():
 		cover_path = "tmp/cover/" + str(new_music[each]["id"]) + ".png"
 
 		# 音乐文件URL
-		music_url = NetEaseApi.geturl_new_api(new_music[each])[0]
+		music_url = NetEaseApi.geturl_new_api(new_music[each], header_cookie)[0]
 
 		# 艺人姓名(ID3使用)
 		artists_name = ""
