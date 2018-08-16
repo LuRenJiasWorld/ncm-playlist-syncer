@@ -41,7 +41,7 @@ def init():
 	# ------开始获取播放列表------
 	# --------------------------
 	# 登录
-	netease.phone_login(phone_number, password)
+	print(netease.login(email, email_password))
 
 	# 获取音乐播放列表
 	data = netease.playlist_detail(playlist_id)
