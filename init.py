@@ -8,6 +8,7 @@ import time
 import os
 from functions import NetEaseMusicAssistant, Util
 from MusicBoxApi import api as NetEaseApi
+from hashlib import md5
 
 # 手机登录
 phone_number = ""
