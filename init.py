@@ -46,6 +46,10 @@ def init():
 	# 获取音乐播放列表
 	data = netease.playlist_detail(playlist_id)
 
+	# 获取当前cookie信息
+
+	print(header_cookie)
+
 	# 读取本地音乐库最新音乐ID
 	with open("local.dat", "r") as file:
 		newest_id = file.read()
