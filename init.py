@@ -17,6 +17,8 @@ password = md5(b'Your Password').hexdigest()
 # 网易邮箱绑定登录
 email = ""
 email_password = md5(b'Your Password').hexdigest()
+
+# 需要同步的播放列表ID
 playlist_id = ""
 
 
