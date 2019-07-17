@@ -1,0 +1,3 @@
+[submodule "MusicBoxApi"]
+	path = MusicBoxApi
+	url = https://github.com/LuRenJiasWorld/MusicBoxApi.git
