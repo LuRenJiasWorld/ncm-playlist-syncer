@@ -1,6 +1,6 @@
 # Netease Cloud Music Playlist Syncer
 
-——网易云音乐播放列表同步(Python 3.6)
+——网易云音乐播放列表同步(Python 3.7)
 
 
 
