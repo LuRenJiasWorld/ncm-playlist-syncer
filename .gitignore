@@ -1,6 +1,6 @@
-
 \.DS_Store
-
 __pycache__/
-
 \.idea/
+tmp/
+venv/
+local\.dat
