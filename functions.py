@@ -10,12 +10,12 @@ class NetEaseMusicAssistant:
 
 	# 下载指定文件，重命名为指定文件名到指定目录
 	def download_file(self, url, file_path):
-		try:
-			url_obj = requests.get(url)
-			with open(file_path, "wb") as code:
-				code.write(url_obj.content)
+		try:	
+			os.system("wget -q \"{}\" -O \"{}\"".format(url, file_path))
+			print("\t -> {}下载成功".format(file_path))
 			return "success"
-		except IOError:
+		except Exception:
+			print("\t -> {}下载失败".format(file_path))
 			return "fail"
 
 	# 对图片进行压缩（主要解决Sony Walkman不识别太大封面文件的情况，反正Walkman分辨率也就那样，小图片无所谓的）

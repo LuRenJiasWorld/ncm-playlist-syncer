@@ -7,7 +7,7 @@
 import time
 import os
 from functions import NetEaseMusicAssistant, Util
-from MusicBoxApi import api as NetEaseApi
+from MusicBoxApi.MusicBoxApi import api as NetEaseApi
 from hashlib import md5
 
 # 手机登录
@@ -45,10 +45,6 @@ def init():
 
 	# 获取音乐播放列表
 	data = netease.playlist_detail(playlist_id)
-
-	# 获取当前cookie信息
-
-	print(header_cookie)
 
 	# 读取本地音乐库最新音乐ID
 	with open("local.dat", "r") as file:
@@ -90,6 +86,8 @@ def init():
 
 		# 音乐文件URL
 		music_url = NetEaseApi.geturl_new_api(new_music[each], header_cookie)[0]
+
+		print("\nurl: {}".format(music_url))
 
 		# 艺人姓名(ID3使用)
 		artists_name = ""
